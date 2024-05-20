@@ -75,6 +75,18 @@ input[type="checkbox"]:before {
 .header-down.header-white {
   background-color: #fff;
   box-shadow: 0 0px 88px 8px rgb(0 0 0 / 8%);
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .header-up {
@@ -100,6 +112,55 @@ input[type="checkbox"]:before {
 
 .header-white .header-nav .menu > ul > li:last-child button i {
   color: #fff;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-128px);
+    -moz-transform: translatey(-128px);
+    -o-transform: translatey(-128px);
+    transform: translatey(-128px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+@-moz-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-128px);
+    -moz-transform: translatey(-128px);
+    -o-transform: translatey(-128px);
+    transform: translatey(-128px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translatey(-128px);
+    -moz-transform: translatey(-128px);
+    -o-transform: translatey(-128px);
+    transform: translatey(-128px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translatey(0);
+    -moz-transform: translatey(0);
+    -o-transform: translatey(0);
+    transform: translatey(0);
+  }
 }
 
 .blur-effect {
