@@ -1,3 +1,6 @@
+
+$(window).scrollTop(0);
+
 // Hide Header on on scroll down
 var lastScrollTop = 0;
 var delta = 5;
