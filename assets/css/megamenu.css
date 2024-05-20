@@ -209,7 +209,7 @@ ul.menu-main {
     height: 100vh;
     overflow: hidden;
     transform: translate(-100%);
-    transition: all 0.5s ease;
+    transition: all 0.3s linear;
     z-index: 1099;
   }
   .header-nav .menu.active {
