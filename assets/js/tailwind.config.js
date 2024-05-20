@@ -7,7 +7,6 @@ tailwind.config = {
       },
       backgroundImage: {
         'parallax-pattern': "url('assets/images/parallaxbg.jpg')",
-        'counter-bg': "url('assets/images/counter-bg.jpg')",
       },
       colors: {
         basewhite: '#FAFAFA',
@@ -48,7 +47,6 @@ tailwind.config = {
       'md': '768px',
       'lg': '1024px',
       'xl': '1366px',
-      '2xl': '1536px',
     },
 
     spacing: {
