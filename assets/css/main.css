@@ -110,6 +110,10 @@ input[type="checkbox"]:before {
   background-color: #151314;
 }
 
+.header-white .header-nav .menu > ul > li:last-child button:hover {
+  background-color: var(--primary);
+}
+
 .header-white .header-nav .menu > ul > li:last-child button i {
   color: #fff;
 }
