@@ -245,6 +245,25 @@ $(".mainslider").slick({
   ],
 });
 
+$('.mainslider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+  var currentVideo = $(slick.$slides[currentSlide]).find('video');
+  var nextVideo = $(slick.$slides[nextSlide]).find('video');
+
+  // Pause the current video
+  if (currentVideo.length) {
+    currentVideo[0].contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+  }
+
+  // Autoplay the next video
+  if (nextVideo.length) {
+    var src = nextVideo.attr('src');
+    if (src.indexOf('autoplay=1') === -1) {
+      src += "&autoplay=1&mute=1";
+      nextVideo.attr('src', src);
+    }
+  }
+});
+
 
 // popup
 
