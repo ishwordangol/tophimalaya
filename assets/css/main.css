@@ -12,6 +12,11 @@ body {
   font-style: normal;
 }
 
+.rubik {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
 /* checkbox */
 
 .checkbox {
@@ -33,6 +38,7 @@ input[type="checkbox"] {
   height: 18px;
   width: 18px;
   -webkit-appearance: none;
+  appearance: none;
   opacity: 0.8;
 }
 
@@ -102,7 +108,8 @@ input[type="checkbox"]:before {
   display: block;
 }
 
-.header-white .header-nav .menu > ul > li > a {
+.header-white .header-nav .menu > ul > li > a,
+.header-white .btnsearch {
   color: #151314;
 }
 
@@ -209,57 +216,6 @@ input[type="checkbox"]:before {
   margin: 0 -16px;
 }
 
-.slick-next,
-.slick-prev {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  z-index: 99;
-  border-radius: 100%;
-  border: 1px solid #c7c0c0;
-}
-
-.slick-next[type="button"],
-.slick-prev[type="button"] {
-  background-color: #fff;
-}
-
-.slick-next:before,
-.slick-prev:before {
-  font-family: "icomoon";
-  font-size: 16px;
-  color: #c7c0c0;
-  opacity: 1;
-}
-
-.slick-next:hover,
-.slick-prev:hover {
-  border: 1px solid var(--primary);
-}
-
-.slick-next:hover:before,
-.slick-prev:hover:before {
-  color: var(--primary);
-}
-
-.slick-prev {
-  left: -16px;
-}
-
-.slick-prev:before {
-  content: "\e90f";
-}
-
-.slick-next {
-  right: -16px;
-}
-
-.slick-next:before {
-  content: "\e910";
-}
-
 .slick-dots {
   bottom: 0;
 }
@@ -302,6 +258,26 @@ input[type="checkbox"]:before {
   color: transparent;
   border: 1px solid var(--primary);
   border-radius: 12px;
+}
+
+.gallerySlider .slick-list .slickbox img {
+  height: 304px;
+}
+
+.gallerySlider .slick-list .slickbox.slick-current img {
+  height: 370px;
+}
+
+.gallerySlider .slick-slide {
+  margin: 0 16px;
+}
+
+.gallerySlider .slick-list {
+  margin: 0 -16px;
+}
+
+.gallerySlider .slick-list {
+  margin-left: -136px;
 }
 
 .bounce {
@@ -386,6 +362,174 @@ input[type="checkbox"]:before {
 .blogwrapper .bloglist:hover:after,
 .blogwrapper .bloglist:hover:after {
   background: none;
+}
+
+/* tab */
+
+.tab-contents.tab-content-sticky > div {
+  padding-top: 144px;
+}
+
+.overview_description.overviewfull {
+  overflow: visible;
+  -webkit-box-orient: unset;
+}
+
+.tablinkwrapper .tablinks > li > a {
+  border-bottom: 4px solid transparent;
+  box-sizing: content-box;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.tablinkwrapper .tablinks > li > a:hover,
+.tablinkwrapper .tablinks > li > a.active {
+  border-bottom: 4px solid var(--primary);
+  transition: left 0.3s ease;
+}
+
+.overview_description.expanded {
+  -webkit-line-clamp: inherit;
+  overflow: visible;
+  text-overflow: unset;
+}
+
+/* itinerary */
+
+.itineraryWrapper ul li > div .itineraryContent .itinerary-description {
+  position: absolute;
+  top: -4px;
+  width: 40%;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.itineraryWrapper ul li > div .itineraryContent .itinerary-description:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.itineraryWrapper ul li > div .itineraryContent .itinerary-description:hover h3,
+.itineraryWrapper
+  ul
+  li
+  > div
+  .itineraryContent
+  .itinerary-description:hover
+  .itinerary-services
+  span {
+  color: #fff;
+}
+
+.itineraryWrapper ul li > div .itineraryContent .itinerary-description > p {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease, opacity 0.2s ease;
+}
+
+.itineraryWrapper
+  ul
+  li
+  > div
+  .itineraryContent
+  .itinerary-description:hover
+  > p {
+  max-height: 120px; /* Adjust according to the content height */
+  opacity: 1;
+}
+
+.itineraryWrapper
+  ul
+  li:nth-child(even)
+  > div
+  .itineraryContent
+  .itinerary-description {
+  text-align: right;
+}
+
+.itineraryWrapper
+  ul
+  li:nth-child(even)
+  > div
+  .itineraryContent
+  .itinerary-description
+  > div {
+  justify-content: end;
+}
+
+.itineraryWrapper ul li:nth-child(odd) > div .itineraryContent {
+  display: flex;
+  justify-content: end;
+}
+
+.itineraryWrapper ul li:nth-child(even) > div .itineraryContent {
+  display: flex;
+  justify-content: start;
+}
+
+.itineraryWrapper ul li > div .itinerary-days {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.itineraryWrapper ul li > div .itinerary-days .itinerary-horizontal-line {
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 10px;
+  transform: translateY(-50%);
+}
+
+.itineraryWrapper
+  ul
+  li:nth-child(odd)
+  > div
+  .itinerary-days
+  .itinerary-horizontal-line {
+  left: 100%;
+  margin-left: -1px;
+}
+
+.itineraryWrapper
+  ul
+  li:nth-child(even)
+  > div
+  .itinerary-days
+  .itinerary-horizontal-line {
+  right: 100%;
+  margin-right: -1px;
+}
+
+/* expansion */
+
+.expansionWrapper .expansionlist {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.expansioncontent {
+  padding-bottom: 24px;
+  display: none;
+}
+
+.expansionWrapper .expansionlist:first-child .expansioncontent {
+  display: block;
+}
+
+.expansionlist > a {
+  padding-block: 24px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.expansionlist > a.active {
+  color: var(--primary);
+}
+
+.expansionlist > a.active .fa-solid {
+  color: #7a56a4;
 }
 
 @media screen and (max-width: 1366px) {

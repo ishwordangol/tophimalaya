@@ -39,6 +39,33 @@
 .icon-x1:before {
   content: "\ea1e";
 }
+.icon-inverted-comma:before {
+  content: "\ea21";
+}
+.icon-Tent:before {
+  content: "\ea22";
+}
+.icon-ForkKnife:before {
+  content: "\ea23";
+}
+.icon-HouseLine:before {
+  content: "\ea24";
+}
+.icon-CloudFog:before {
+  content: "\ea25";
+}
+.icon-ion_bed-sharp:before {
+  content: "\ea26";
+}
+.icon-Leaf-3:before {
+  content: "\ea27";
+}
+.icon-UsersThree:before {
+  content: "\ea28";
+}
+.icon-PersonSimpleHike:before {
+  content: "\ea29";
+}
 .icon-mountain:before {
   content: "\ea1f";
 }

@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Detail Page</title>
+    <!-- Favicon links -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/icomoon.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/megamenu.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <header class="header header-down">
+        <div class="header-nav">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="header-item">
+                        <div class="logo">
+                            <a href="index.html" aria-label="Logo Link">
+                                <img src="assets/images/tophimalaya-logowhite.png" alt="Top Himalaya Guides"
+                                    class="h-12 sm:h-full logo-white" />
+                                <img src="assets/images/tophimalaya-logomain.png" alt="Top Himalaya Guides"
+                                    class="h-12 sm:h-full logo-primary hidden" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- menu start here -->
+                    <div class="header-item">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu">
+                            <div class="mobile-menu-head">
+                                <div class="go-back flex items-center justify-center">
+                                    <i class="icon-chevron-left text-2xl"></i>
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="menu-main">
+                                <li class="menu-item-has-children mega-menu-menu-items">
+                                    <a href="#" class="flex items-center"><span class="mr-2">Trekking</span>
+                                        <i class="icon-chevron-down text-2xl"></i></a>
+                                    <div class="sub-menu mega-menu w-full">
+                                        <div class="tab-section grid grid-cols-1 lg:grid-cols-4 bg-neutral-900">
+                                            <div class="tabs px-20 py-8 flex flex-col items-end justify-between">
+                                                <div class="flex flex-col space-y-4">
+                                                    <button
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary"
+                                                        data-tab="tab1">
+                                                        8000M
+                                                    </button>
+                                                    <button data-tab="tab2"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        7000M
+                                                    </button>
+                                                    <button data-tab="tab3"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        6000M
+                                                    </button>
+                                                    <button data-tab="tab4"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        5800M
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a href="#"
+                                                        class="text-lg text-white font-semibold hover:text-primary">View
+                                                        All</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab_container lg:col-span-3 bg-neutral-1000">
+                                                <h3 class="d_active tab_drawer_heading" data-tab="tab1">
+                                                    8000M
+                                                </h3>
+                                                <div id="tab1"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab1 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab2">
+                                                    7000M
+                                                </h3>
+                                                <div id="tab2"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab2 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab3">
+                                                    6000M
+                                                </h3>
+                                                <div id="tab3"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab3 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab4">
+                                                    5800M
+                                                </h3>
+                                                <div id="tab4"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab4 -->
+                                            </div>
+                                            <!-- .tab_container -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-children mega-menu-menu-items">
+                                    <a href="#" class="flex items-center"><span class="mr-2">Mountaineering</span>
+                                        <i class="icon-chevron-down text-2xl"></i></a>
+                                    <div class="sub-menu mega-menu w-full">
+                                        <div class="tab-section grid grid-cols-1 lg:grid-cols-4 bg-neutral-900">
+                                            <div class="tabs px-20 py-8 flex flex-col items-end justify-between">
+                                                <div class="flex flex-col space-y-4">
+                                                    <button
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary"
+                                                        data-tab="tab5">
+                                                        8000M
+                                                    </button>
+                                                    <button data-tab="tab6"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        7000M
+                                                    </button>
+                                                    <button data-tab="tab7"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        6000M
+                                                    </button>
+                                                    <button data-tab="tab8"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        5800M
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a href="#"
+                                                        class="text-lg text-white font-semibold hover:text-primary">View
+                                                        All</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab_container col-span-3 bg-neutral-1000">
+                                                <h3 class="d_active tab_drawer_heading" data-tab="tab5">
+                                                    8000M
+                                                </h3>
+                                                <div id="tab5"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab1 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab6">
+                                                    7000M
+                                                </h3>
+                                                <div id="tab6"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab2 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab7">
+                                                    6000M
+                                                </h3>
+                                                <div id="tab7"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab3 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab8">
+                                                    5800M
+                                                </h3>
+                                                <div id="tab8"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-3 text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab4 -->
+                                            </div>
+                                            <!-- .tab_container -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#" class="flex items-center"><span class="mr-2">Training</span>
+                                        <i class="icon-chevron-down text-2xl"></i></a>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="#">Training 1</a></li>
+                                            <li><a href="#">Training 2</a></li>
+                                            <li><a href="#">Training 3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#" class="flex items-center"><span class="mr-2">More</span>
+                                        <i class="icon-chevron-down text-2xl"></i></a>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="#">Login</a></li>
+                                            <li><a href="#">Register</a></li>
+                                            <li><a href="#">Faq</a></li>
+                                            <li><a href="#">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button
+                                        class="openmodelbtn bg-white w-12 h-12 rounded-full flex justify-center items-center transition ease-linear duration-150 hover:bg-primary hover:text-white"
+                                        aria-labelledby="Search">
+                                        <i class="icon-search text-2xl"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="flex space-x-8 items-center">
+                            <button class="btnsearch openmodelbtn block lg:hidden text-white hover:text-primary"
+                                aria-labelledby="Search">
+                                <i class="icon-search text-xl font-medium"></i>
+                            </button>
+                            <!-- mobile menu trigger -->
+                            <div class="mobile-menu-trigger">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- menu end here -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- End of header section -->
+
+    <section class="breadcrumbWrapper relative">
+        <img src="assets/images/breadcrumn.jpg" alt="featured image" class="w-full h-[600px] object-cover" />
+        <div class="absolute inset-0 w-full h-full bg-black/20">
+        </div>
+        <div class="absolute top-1/2 -translate-y-1/2 w-full mx-auto">
+            <div class="container">
+                <h1 class="rubik text-4xl md:text-5xl lg:text-[64px] font-bold max-w-4xl text-white">
+                    MT. EVEREST EXPEDITION (8848.86M) - SOUTH
+                </h1>
+            </div>
+        </div>
+
+    </section>
+
+    <article>
+        <section class="horizontaltabWrapper relative z-50">
+            <div class="tablinkwrapper border-b border-black/20 sticky top-0 bg-white w-full z-50">
+                <div class="container">
+                    <div class="flex items-center justify-between box-border">
+                        <ul class="tablinks flex items-center gap-3 overflow-x-auto">
+                            <li><a href="#thg-overview" class="active inline-block py-9 px-4 text-lg rubik">Overview</a>
+                            </li>
+                            <li><a href="#thg-gallery" class="inline-block py-9 px-4 text-lg rubik">Gallery</a></li>
+                            <li><a href="#thg-itenerary" class="inline-block py-9 px-4 text-lg rubik">Itinerary</a></li>
+                            <li><a href="#thg-map" class="inline-block py-9 px-4 text-lg rubik">Map</a></li>
+                            <li><a href="#thg-included" class="inline-block py-9 px-4 text-lg rubik">Included</a></li>
+                            <li><a href="#thg-fixdates" class="inline-block py-9 px-4 text-lg rubik">Fixed Dates</a>
+                            </li>
+                            <li><a href="#thg-usefulinfo" class="inline-block py-9 px-4 text-lg rubik">Useful Info</a>
+                            </li>
+                            <li><a href="#thg-reviews" class="inline-block py-9 px-4 text-lg rubik">Reviews</a></li>
+                            <li><a href="#thg-faq" class="inline-block py-9 px-4 text-lg rubik">Faq</a></li>
+
+                        </ul>
+
+                        <div class="hidden tabbtn lg:flex items-center gap-4">
+                            <button
+                                class="btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold">Inquiry</button>
+                            <button
+                                class="btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">Book
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-contents">
+                <div id="thg-overview" class="pt-36 pb-56">
+                    <div class="container">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 xl:gap-26 place-items-start">
+                            <div>
+                                <div class="sectiontitle">
+                                    <h2
+                                        class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold mb-4">
+                                        Trip Overview</h2>
+                                </div>
+                                <div
+                                    class="overview_description text-ellipse line-clamp-6 overflow-hidden text-lg text-neutral-800 transition ease-linear duration-150">
+                                    <p>Ask an adventurer about their dream, and they will answer you with a word;
+                                        EVEREST.
+                                        Who would not want to reach the top of the world? Who would not want to touch
+                                        the
+                                        sky? It’s the trip of a lifetime, the Everest Expedition. Mt. Everest is the
+                                        highest
+                                        mountain in the world and is located in the Himalayas, on the border between
+                                        Nepal
+                                        and China. Mt. Everest, also known as The Sagarmatha in Nepali is the tallest
+                                        peak
+                                        on earth with an altitude of 8848.86m. The southern face lies in Nepal whereas
+                                        the
+                                        northern face is in Tibet. In 1715, China surveyed the mountain for the first
+                                        time
+                                        while they were mapping Chinese territory and depicted it as Mount Qomolangma
+                                    </p>
+                                </div>
+                                <a href="#"
+                                    class="readalloverview block mt-6 font-semibold text-lg underline hover:text-primary">Read
+                                    More</a>
+                            </div>
+                            <div class="grid grid-cols-2 gap-y-6 gap-x-26">
+                                <div class="flex gap-x-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+                                        <span class="icon-chart text-white text-2xl"></span>
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <h4 class="font-semibold text-lg leading-[120%] text-neutral-1000">Easy</h4>
+                                        <h5 class="font-semibold text-sm leading-[120%] text-neutral-600">Difficulty
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+                                        <span class="icon-clock text-white text-2xl"></span>
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <h4 class="font-semibold text-lg leading-[120%] text-neutral-1000">65 Day</h4>
+                                        <h5 class="font-semibold text-sm leading-[120%] text-neutral-600">Duration</h5>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+                                        <span class="icon-PersonSimpleHike text-white text-2xl"></span>
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <h4 class="font-semibold text-lg leading-[120%] text-neutral-1000">5-7 Hours
+                                        </h4>
+                                        <h5 class="font-semibold text-sm leading-[120%] text-neutral-600">Walking Per
+                                            Day</h5>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+                                        <span class="icon-UsersThree text-white text-2xl"></span>
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <h4 class="font-semibold text-lg leading-[120%] text-neutral-1000">2-15 PAX</h4>
+                                        <h5 class="font-semibold text-sm leading-[120%] text-neutral-600">Group size
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+                                        <span class="icon-mountain text-white text-2xl"></span>
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <h4 class="font-semibold text-lg leading-[120%] text-neutral-1000">8,848.86m
+                                        </h4>
+                                        <h5 class="font-semibold text-sm leading-[120%] text-neutral-600">Max elevation
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+                                        <span class="icon-Leaf-3 text-white text-2xl"></span>
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <h4 class="font-semibold text-lg leading-[120%] text-neutral-1000">Spring</h4>
+                                        <h5 class="font-semibold text-sm leading-[120%] text-neutral-600">Best Season
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+                                        <span class="icon-ion_bed-sharp text-white text-2xl"></span>
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <h4 class="font-semibold text-lg leading-[120%] text-neutral-1000">Hotel + Lodge
+                                            + Tent</h4>
+                                        <h5 class="font-semibold text-sm leading-[120%] text-neutral-600">Accommodations
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="flex gap-4">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary">
+                                        <span class="icon-CloudFog text-white text-2xl"></span>
+                                    </div>
+                                    <div class="space-y-1.5">
+                                        <h4 class="font-semibold text-lg leading-[120%] text-neutral-1000">Report</h4>
+                                        <h5 class="font-semibold text-sm leading-[120%] text-neutral-600">Weather Report
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="thg-gallery" class="py-20 bg-secondarylight">
+                    <div class="container">
+                        <div class="sectiontitle">
+                            <h2
+                                class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold">
+                                Gallery</h2>
+                        </div>
+                        <div class="relative">
+                        <div class="pt-6 gallerySlider relative overflow-hidden">
+                            <div class="slickbox">
+                                <a href="#">
+                                    <img src="assets/images/Gallery/photo1.jpg" class="w-full object-cover h-19"/>
+                                </a>
+                            </div>
+                            <div class="slickbox">
+                                <a href="#">
+                                    <img src="assets/images/Gallery/photo2.jpg" class="w-full object-cover h-19"/>
+                                </a>
+                            </div>
+                            <div class="slickbox">
+                                <a href="#">
+                                    <img src="assets/images/Gallery/photo3.jpg" class="w-full object-cover h-19"/>
+                                </a>
+                            </div>
+                            <div class="slickbox">
+                                <a href="#">
+                                    <img src="assets/images/Gallery/photo2.jpg" class="w-full object-cover h-19"/>
+                                </a>
+                            </div>
+                            <div class="slickbox">
+                                <a href="#">
+                                    <img src="assets/images/Gallery/photo1.jpg" class="w-full object-cover h-19"/>
+                                </a>
+                            </div>
+                            <div class="slickbox">
+                                <a href="#">
+                                    <img src="assets/images/Gallery/photo3.jpg" class="w-full object-cover h-19"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallerySlider__arrows flex items-center gap-3 absolute right-0 bottom-0">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="thg-itenerary" class="py-20">
+                    <div class="container">
+                        <div class="sectiontitle flex items-center justify-between">
+                            <h2
+                                class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold">
+                                Itinenary</h2>
+                            <button
+                                class="btn btn-primary border border-primary text-primary py-3 px-12 hover:bg-primary hover:text-white font-bold uppercase text-sm leading[120%]">Download
+                                PDF</button>
+                        </div>
+
+                        <div class="itineraryWrapper py-20">
+                            <div class="relative">
+                                <ul class="flex w-full flex-col gap-24">
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Kathmandu</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">01</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Expedition briefing and preparation inKathmandu</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">02</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Fly from Kathmandu to Lukla, and trek to Phakding</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">03</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Trek from Phakding to Namche Bazzar</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">04</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Acclimatization at Namche Bazaa</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">05</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Trek from Dibuche to Dingboche</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-Tent"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Tent</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">06</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Trek from Dingboche to Lobuche</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-Tent"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Tent</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">07</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Trek from Lobuche to Everest Base Camp</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-Tent"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Tent</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">08</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Rotation [Basecamp – Rotation (Camp I, Camp II and Camp III) –
+                                                        Basecamp]</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-Tent"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Tent</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span
+                                                        class="block text-[28px] font-bold leading-[120%]">09-39</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Summit Push [Base Camp – Everest Summit – Base Camp]</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-Tent"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Tent</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span
+                                                        class="block text-[28px] font-bold leading-[120%]">40-53</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Cleaning Up Base Camp</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-Tent"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Tent</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">54</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Trek from Pheriche to Namche Bazaar</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">55</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Trek from Namche Bazaar to Lukla</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">56</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="relative bg-white w-full py-4">
+                                            <div class="itineraryContent bg-white">
+                                                <div class="itinerary-description p-6 bg-primarylight cursor-pointer">
+                                                    <h3
+                                                        class="font-semibold text-2xl leading-[120%] text-neutral-1000 mb-3">
+                                                        Fly from Lukla to Kathmandu</h3>
+                                                    <p>Lorem Ipsum has been the industry's standard dummy text ever
+                                                        since the 1500s, when an unknown printer took a galley of type
+                                                        and scrambled it to make a type specimen book. </p>
+                                                    <div
+                                                        class="relative itinerary-services flex items-center gap-3 py-3">
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-HouseLine"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Hotel</span>
+                                                        </div>
+                                                        <div class="flex items-center space-x-2">
+                                                            <span class="text-lg icon-ForkKnife"></span>
+                                                            <span
+                                                                class="text-neutral-800 text-lg font-semibold leading-[120%]">Dinner</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="itinerary-days flex justify-center items-center border-2 border-dashed border-neutral-800 w-28 h-28 rounded-full bg-white">
+                                                <div
+                                                    class="relative flex justify-center items-center flex-col w-full h-full">
+                                                    <span class="block text-lg font-bold leading-[120%]">Days</span>
+                                                    <span class="block text-[28px] font-bold leading-[120%]">57</span>
+                                                    <div
+                                                        class="itinerary-horizontal-line border-t-2 border-dashed border-neutral-800">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+                                <div class="h-full w-px bg-black absolute left-1/2 top-0 bottom-0 z-[-1]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="thg-map" class="py-20">
+                    <div class="container">
+                        <div class="sectiontitle flex items-center justify-between">
+                            <h2
+                                class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold">
+                                Route Map</h2>
+                            <button
+                                class="btn btn-primary border border-primary text-primary py-3 px-12 hover:bg-primary hover:text-white font-bold uppercase text-sm leading[120%]">View
+                                Co-ordinates</button>
+                        </div>
+                    </div>
+                    <picture>
+                        <img src="assets/images/route-map/everest-route.png" class="w-full" />
+                    </picture>
+                </div>
+                <div id="thg-included" class="my-32 py-20">
+                    <div class="container">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div>
+                                <div class="sectiontitle">
+                                    <h2
+                                        class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold mb-6">
+                                        What's Included</h2>
+                                </div>
+                                <ul class="flex flex-col space-y-6">
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Arrival & Departure: Pick and drop
+                                            facility-Airport/Hotel/Airport</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Accommodation: 4 nights stay at a deluxe
+                                            hotel in Kathmandu on Bed & Breakfast Basis-Double Room</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Welcome dinner: One Welcome Dinner in
+                                            tourist standard restaurant in Kathmandu with Office’s Staffs</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Domestic Transportation:
+                                            Kathmandu-Lukla-Kathmandu by flight inclusive of domestic Airport Tax</span>
+                                    </li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Transportation: Required Transportation
+                                            from Kathmandu/Base Camp/Kathmandu for all Staffs and Members</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Permits & Fees: Everest Expedition Permit
+                                            +Summit Route Permit Ice Fall Route, National park & TIMS permit fees</span>
+                                    </li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Food & Lodging: 3 meals a day in Trekking &
+                                            at Basecamp for Members & Staffs</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Porters: Porters up to & back from
+                                            BC</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Staff Remunerations and allowances: All
+                                            Nepalese staffs' & porters' daily wages/equipment/food/clothing with
+                                            personal insurances</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Insurance: All Staff's Medical & Emergency
+                                            rescue Insurance</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Warm Farewell Dinner at a standard
+                                            restaurant in Kathmandu with Nepalese Staff</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Oxygen for Everest: O2 cylinder: 5 oxygen
+                                            (O2) cylinders for each Member and 3 oxygen bottles for each High- altitude
+                                            Sherpa. Extra oxygen will be stored at Basecamp for emergencies</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">Mask & Regulator: 1 Set of top Out mask for
+                                            each member and high-altitude Sherpa</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-check-circle text-primary"></span><span
+                                            class="text-neutral-800 text-lg">High Altitude Climbing Sherpa: 1 Climbing
+                                            Sherpa per member</span></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <div class="sectiontitle">
+                                    <h2
+                                        class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold mb-4">
+                                        What's Excluded</h2>
+                                </div>
+                                <ul class="flex flex-col space-y-6">
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">International airfare to and from
+                                            Kathmandu</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">Nepalese Visa charges</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">Extra night in Kathmandu: Extra night
+                                            accommodation in Kathmandu. In case of early arrival or late departure,
+                                            early return from the expedition (due to any reason) than the scheduled
+                                            itinerary. </span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">Insurance: Travel and High Altitude
+                                            Insurance / Accident / Medical / emergency evacuation</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">Sherpa summit Bonus: Mandatory – Minimum
+                                            USD 1,500</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">Tips: Please calculate some tips for
+                                            Basecamp staffs and porters</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">The full set of Member's personal climbing
+                                            equipment & clothing</span></li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">Rescue Evacuation: Emergency rescue
+                                            evacuation cost, if needed and all other expenses of personal nature</span>
+                                    </li>
+                                    <li class="flex space-x-3"><span
+                                            class="text-lg icon-x-circle text-red-400"></span><span
+                                            class="text-neutral-800 text-lg">Any other item not listed in the "Price
+                                            Includes" section</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="thg-fixdates" class="py-20 bg-secondarylight">
+                    <div class="container">
+                        <div class="sectiontitle">
+                            <h2
+                                class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold mb-8">
+                                Fixed Date</h2>
+                        </div>
+                        <table class="w-full table-auto">
+                            <thead>
+                                <tr>
+                                    <th class="text-left text-lg font-semibold text-neutral-1000 leading-[120%] pb-6">
+                                        Package</th>
+                                    <th class="text-lg font-semibold text-neutral-1000 leading-[120%] pb-6">Date</th>
+                                    <th class="text-lg font-semibold text-neutral-1000 leading-[120%] pb-6">State</th>
+                                    <th class="text-lg font-semibold text-neutral-1000 leading-[120%] pb-6">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-t border-slate-300">
+                                    <td class="py-6">
+                                        <div class="flex flex-col space-y-2">
+                                            <h4 class="font-semibold text-2xl text-neutral-1000 leading[120%]">60 Days
+                                            </h4>
+                                            <h5 class="space-x-2 font-semibold text-neutral-1000 leading[120%]"><span
+                                                    class="icon-UsersThree"></span><span>16 PAX</span></h5>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div class="flex flex-col space-y-2">
+                                            <span class="text-lg text-neutral-1000">Start: 2024 - 03 - 12</span>
+                                            <span class="text-lg text-neutral-1000">End: 2024 - 05 - 16</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div
+                                            class="inline-block px-7 py-1 space-x-2 font-semibold bg-thggreen rounded-full text-basewhite leading[120%]">
+                                            <span class="icon-UsersThree"></span><span>5 seat open</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div class="tabbtn flex justify-center items-center gap-4">
+                                            <button
+                                                class="btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold">Inquiry</button>
+                                            <button
+                                                class="btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">Book
+                                                Now</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-t border-slate-300">
+                                    <td class="py-6">
+                                        <div class="flex flex-col space-y-2">
+                                            <h4 class="font-semibold text-2xl text-neutral-1000 leading[120%]">60 Days
+                                            </h4>
+                                            <h5 class="space-x-2 font-semibold text-neutral-1000 leading[120%]"><span
+                                                    class="icon-UsersThree"></span><span>16 PAX</span></h5>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div class="flex flex-col space-y-2">
+                                            <span class="text-lg text-neutral-1000">Start: 2024 - 03 - 12</span>
+                                            <span class="text-lg text-neutral-1000">End: 2024 - 05 - 16</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div
+                                            class="inline-block px-7 py-1 space-x-2 font-semibold bg-thggreen rounded-full text-basewhite leading[120%]">
+                                            <span class="icon-UsersThree"></span><span>booking closed</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div class="tabbtn flex justify-center items-center gap-4">
+                                            <button
+                                                class="btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold">Inquiry</button>
+                                            <button
+                                                class="btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">Book
+                                                Now</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-t border-slate-300">
+                                    <td class="py-6">
+                                        <div class="flex flex-col space-y-2">
+                                            <h4 class="font-semibold text-2xl text-neutral-1000 leading[120%]">60 Days
+                                            </h4>
+                                            <h5 class="space-x-2 font-semibold text-neutral-1000 leading[120%]"><span
+                                                    class="icon-UsersThree"></span><span>16 PAX</span></h5>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div class="flex flex-col space-y-2">
+                                            <span class="text-lg text-neutral-1000">Start: 2024 - 03 - 12</span>
+                                            <span class="text-lg text-neutral-1000">End: 2024 - 05 - 16</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div
+                                            class="inline-block px-7 py-1 space-x-2 font-semibold bg-thggreen rounded-full text-basewhite leading[120%]">
+                                            <span class="icon-UsersThree"></span><span>10 seat open</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-6 text-center">
+                                        <div class="tabbtn flex justify-center items-center gap-4">
+                                            <button
+                                                class="btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold">Inquiry</button>
+                                            <button
+                                                class="btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">Book
+                                                Now</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="thg-usefulinfo" class="pt-64 pb-52">
+                    <div class="container">
+                        <div class="sectiontitle">
+                            <h2
+                                class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold mb-8">
+                                Useful Information</h2>
+                        </div>
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+                            <a href="#" class="block p-8"
+                                class="h-50 bg-primarylight border border-primarylight flex justify-center items-center hover:border-primary">
+                                <div class="flex flex-col justify-center items-center space-y-2">
+                                    <img src="assets/images/usefulInfo/gear-guide.png" />
+                                    <h3 class="text-2xl font-semibold text-neutral-1000 leading-[120%]">Gear Guide Book
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="block p-8"
+                                class="h-50 bg-primarylight border border-primarylight flex justify-center items-center hover:border-primary">
+                                <div class="flex flex-col justify-center items-center space-y-2">
+                                    <img src="assets/images/usefulInfo/print-gear.png" />
+                                    <h3 class="text-2xl font-semibold text-neutral-1000 leading-[120%]">Printable Gear
+                                        Checklistk</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="block p-8"
+                                class="h-50 bg-primarylight border border-primarylight flex justify-center items-center hover:border-primary">
+                                <div class="flex flex-col justify-center items-center space-y-2">
+                                    <img src="assets/images/usefulInfo/travel-info.png" />
+                                    <h3 class="text-2xl font-semibold text-neutral-1000 leading-[120%]">Travel
+                                        Information</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="block p-8"
+                                class="h-50 bg-primarylight border border-primarylight flex justify-center items-center hover:border-primary">
+                                <div class="flex flex-col justify-center items-center space-y-2">
+                                    <img src="assets/images/usefulInfo/insurance.png" />
+                                    <h3 class="text-2xl font-semibold text-neutral-1000 leading-[120%]">Travel Insurance
+                                    </h3>
+                                </div>
+                            </a>
+                            <a href="#" class="block p-8"
+                                class="h-50 bg-primarylight border border-primarylight flex justify-center items-center hover:border-primary">
+                                <div class="flex flex-col justify-center items-center space-y-2">
+                                    <img src="assets/images/usefulInfo/pdf.png" />
+                                    <h3 class="text-2xl font-semibold text-neutral-1000 leading-[120%]">Travel PDFk</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="block p-8"
+                                class="h-50 bg-primarylight border border-primarylight flex justify-center items-center hover:border-primary">
+                                <div class="flex flex-col justify-center items-center space-y-2">
+                                    <img src="assets/images/usefulInfo/itinerary.png" />
+                                    <h3 class="text-2xl font-semibold text-neutral-1000 leading-[120%]">Itinerary</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="thg-reviews" class="py-20 bg-secondarylight">
+                    <div class="container">
+                        <div class="sectiontitle flex items-center justify-between">
+                            <h2
+                                class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold">
+                                Reviews</h2>
+                            <button
+                                class="btn btn-primary border border-primary text-primary py-3 px-12 hover:bg-primary hover:text-white font-bold uppercase text-sm leading[120%]">
+                                Write A Review</button>
+                        </div>
+                        <section class="relative mt-8 reviewsliderWrapper overflow-hidden">
+                            <div class="reviewslider">
+                                <div class="slickbox">
+                                    <div class="flex flex-wrap gap-6">
+                                        <a href="#" aria-label="Testimonial 1" class="md:w-1/2 relative"><img
+                                                src="assets/images/testimonial/tina-atword.jpg"
+                                                alt="Tina Atword Picture" class="" />
+                                        </a>
+                                        <div class="flex-1 text-neutral-800" data-aos="fade-down" data-aos-delay="50"
+                                            data-aos-duration="1000">
+                                            <div class="flex items-start h-full">
+                                                <span class="icon-inverted-comma text-[80px]"></span>
+                                                <div class="flex justify-between flex-col h-full">
+                                                    <p class="mt-6">I had a wonderful experience with Seven Summits
+                                                        Trek. Everyone was professional and very focused on meeting the
+                                                        needs of our team. The logistics ran smoothly and things were
+                                                        otherwise well organized. I particularly appreciated the fact
+                                                        that Seven Summits was flexible, in that they were open to our
+                                                        suggestions about adjusting the schedule. The bottom line for me
+                                                        is it felt as if we were partners with Seven Summits Trek rather
+                                                        than just their client.</p>
+                                                    <div>
+                                                        <h4
+                                                            class="text-2xl font-semibold leading-[120%] text-neutral-1000">
+                                                            Tina Atwood</h4>
+                                                        <h5 class="font-semibold leading-[120%] text-neutral-800">USA
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slickbox">
+                                    <div class="flex flex-wrap gap-6">
+                                        <a href="#" aria-label="Testimonial 1" class="md:w-1/2 relative"><img
+                                                src="assets/images/testimonial/tina-atword.jpg"
+                                                alt="Tina Atword Picture" class="" />
+                                        </a>
+                                        <div class="flex-1 text-neutral-800" data-aos="fade-down" data-aos-delay="50"
+                                            data-aos-duration="1000">
+                                            <div class="flex items-start h-full">
+                                                <span class="icon-inverted-comma text-[80px]"></span>
+                                                <div class="flex justify-between flex-col h-full">
+                                                    <p class="mt-6">I had a wonderful experience with Seven Summits
+                                                        Trek. Everyone was professional and very focused on meeting the
+                                                        needs of our team. The logistics ran smoothly and things were
+                                                        otherwise well organized. I particularly appreciated the fact
+                                                        that Seven Summits was flexible, in that they were open to our
+                                                        suggestions about adjusting the schedule. The bottom line for me
+                                                        is it felt as if we were partners with Seven Summits Trek rather
+                                                        than just their client.</p>
+                                                    <div>
+                                                        <h4
+                                                            class="text-2xl font-semibold leading-[120%] text-neutral-1000">
+                                                            Tina Atwood</h4>
+                                                        <h5 class="font-semibold leading-[120%] text-neutral-800">USA
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slickbox">
+                                    <div class="flex flex-wrap gap-6">
+                                        <a href="#" aria-label="Testimonial 1" class="md:w-1/2 relative"><img
+                                                src="assets/images/testimonial/tina-atword.jpg"
+                                                alt="Tina Atword Picture" class="" />
+                                        </a>
+                                        <div class="flex-1 text-neutral-800" data-aos="fade-down" data-aos-delay="50"
+                                            data-aos-duration="1000">
+                                            <div class="flex items-start h-full">
+                                                <span class="icon-inverted-comma text-[80px]"></span>
+                                                <div class="flex justify-between flex-col h-full">
+                                                    <p class="mt-6">I had a wonderful experience with Seven Summits
+                                                        Trek. Everyone was professional and very focused on meeting the
+                                                        needs of our team. The logistics ran smoothly and things were
+                                                        otherwise well organized. I particularly appreciated the fact
+                                                        that Seven Summits was flexible, in that they were open to our
+                                                        suggestions about adjusting the schedule. The bottom line for me
+                                                        is it felt as if we were partners with Seven Summits Trek rather
+                                                        than just their client.</p>
+                                                    <div>
+                                                        <h4
+                                                            class="text-2xl font-semibold leading-[120%] text-neutral-1000">
+                                                            Tina Atwood</h4>
+                                                        <h5 class="font-semibold leading-[120%] text-neutral-800">USA
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slickbox">
+                                    <div class="flex flex-wrap gap-6">
+                                        <a href="#" aria-label="Testimonial 1" class="md:w-1/2 relative"><img
+                                                src="assets/images/testimonial/tina-atword.jpg"
+                                                alt="Tina Atword Picture" class="" />
+                                        </a>
+                                        <div class="flex-1 text-neutral-800" data-aos="fade-down" data-aos-delay="50"
+                                            data-aos-duration="1000">
+                                            <div class="flex items-start h-full">
+                                                <span class="icon-inverted-comma text-[80px]"></span>
+                                                <div class="flex justify-between flex-col h-full">
+                                                    <p class="mt-6">I had a wonderful experience with Seven Summits
+                                                        Trek. Everyone was professional and very focused on meeting the
+                                                        needs of our team. The logistics ran smoothly and things were
+                                                        otherwise well organized. I particularly appreciated the fact
+                                                        that Seven Summits was flexible, in that they were open to our
+                                                        suggestions about adjusting the schedule. The bottom line for me
+                                                        is it felt as if we were partners with Seven Summits Trek rather
+                                                        than just their client.</p>
+                                                    <div>
+                                                        <h4
+                                                            class="text-2xl font-semibold leading-[120%] text-neutral-1000">
+                                                            Tina Atwood</h4>
+                                                        <h5 class="font-semibold leading-[120%] text-neutral-800">USA
+                                                        </h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="reviewSlider__arrows flex items-center gap-3 absolute right-0 bottom-2">
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div id="thg-faq" class="py-32">
+                    <div class="container">
+                        <div class="sectiontitle">
+                            <h2
+                                class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold mb-8">
+                                FAQ</h2>
+                        </div>
+                        <div class="mt-8 expansionWrapper">
+                            <div class="expansionlist">
+                                <a href="#"
+                                    class="flex items-center justify-between active font-semibold text-neutral-1000 text-2xl leading-[120%] hover:text-primary gap-8">
+                                    <span>What skillset and fitness level are
+                                        required?</span>
+                                    <span class="icon-box icon-plus"></span>
+                                </a>
+                                <div class="expansioncontent w-full text-neutral-800">
+                                    <div class="w-full lg:w-1/2">
+                                        <p>All Elite Exped expeditions are within extreme high altitude environments,
+                                            with differing requirements for ability. Due to the nature of these
+                                            operational landscapes, it is essential you provide concise, honest
+                                            descriptions of relevant experience and current fitness levels. Upon
+                                            receipt, we will review your experience and respond accordingly. At this
+                                            point, if we consider there to be any shortfalls, we can collectively
+                                            discuss the opportunities and/or provide a training support plan to achieve
+                                            your goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expansionlist">
+                                <a href="#"
+                                    class="flex items-center justify-between font-semibold text-neutral-1000 text-2xl leading-[120%] hover:text-primary gap-8">
+                                    <span>What equipment is provided?</span>
+                                    <span class="icon-box icon-minus"></span>
+                                </a>
+                                <div class="expansioncontent w-full text-neutral-800">
+                                    <div class="w-full lg:w-1/2">
+                                        <p>All Elite Exped expeditions are within extreme high altitude environments,
+                                            with differing requirements for ability. Due to the nature of these
+                                            operational landscapes, it is essential you provide concise, honest
+                                            descriptions of relevant experience and current fitness levels. Upon
+                                            receipt, we will review your experience and respond accordingly. At this
+                                            point, if we consider there to be any shortfalls, we can collectively
+                                            discuss the opportunities and/or provide a training support plan to achieve
+                                            your goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expansionlist">
+                                <a href="#"
+                                    class="flex items-center justify-between font-semibold text-neutral-1000 text-2xl leading-[120%] gap-8">
+                                    <span>What transport are included?</span>
+                                    <span class="icon-box icon-minus"></span>
+                                </a>
+                                <div class="expansioncontent w-full text-neutral-800">
+                                    <div class="w-full lg:w-1/2">
+                                        <p>All Elite Exped expeditions are within extreme high altitude environments,
+                                            with differing requirements for ability. Due to the nature of these
+                                            operational landscapes, it is essential you provide concise, honest
+                                            descriptions of relevant experience and current fitness levels. Upon
+                                            receipt, we will review your experience and respond accordingly. At this
+                                            point, if we consider there to be any shortfalls, we can collectively
+                                            discuss the opportunities and/or provide a training support plan to achieve
+                                            your goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="expansionlist">
+                                <a href="#"
+                                    class="flex items-center justify-between font-semibold text-neutral-1000 text-2xl leading-[120%] gap-8">
+                                    <span>I heard about different packages, what are these
+                                        pacakges available ?</span>
+                                    <span class="icon-box icon-minus"></span>
+                                </a>
+                                <div class="expansioncontent w-full text-neutral-800">
+                                    <div class="w-full lg:w-1/2">
+                                        <p>All Elite Exped expeditions are within extreme high altitude environments,
+                                            with differing requirements for ability. Due to the nature of these
+                                            operational landscapes, it is essential you provide concise, honest
+                                            descriptions of relevant experience and current fitness levels. Upon
+                                            receipt, we will review your experience and respond accordingly. At this
+                                            point, if we consider there to be any shortfalls, we can collectively
+                                            discuss the opportunities and/or provide a training support plan to achieve
+                                            your goals.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+
+    <section class="popularTrek py-12 md:py-16 lg:py-20 bg-secondarylight">
+        <div class="container">
+            <div class="sectiontitle" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
+                <h2
+                    class="text-netrual-100 text-3xl md:text-4xl lg:text-[40px] lg:leading-[120%] font-bold mb-4 md:mb-8 lg:mb-14">
+                    Similar Trips</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8" data-aos="fade-down"
+                data-aos-delay="100" data-aos-duration="1000">
+                <a href="#">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/trekking/trek1.jpg" alt="Trekking Photo"
+                            class="transition ease-linear duration-150 hover:scale-110" />
+                        <div class="absolute top-0 right-0">
+                            <div class="date flex bg-primary items-center p-1 md:p-2 lg:p-3 space-x-2 md:space-x-3">
+                                <span><i class="text-white text-xl md:text-2xl icon-CalendarDots"></i></span>
+                                <span class="text-white font-semibold text-base">April-June</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trekdescription py-4">
+                        <h3
+                            class="text-netrual-100 text-xl md:text-2xl font-bold mb-3 transition ease-linear delay-150 hover:text-primary">
+                            Ama Dablam Expediton</h3>
+                        <p class="text-ellipse line-clamp-2 overflow-hidden text-neutral-800 mb-4">Join IFMGA guides for Ama Dablam Expedition - one of the world’s most beautiful and
+                            sought-after peaks. The experienced mountaineer will find the South East Ridge, which is the
+                            easiest route on the mountain, a good challenge.</p>
+                        <div class="flex items-center space-x-6">
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-chart"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">Hard</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-clock"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">65 days</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-mountain"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">6,856m</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/trekking/trek2.jpg" alt="Trekking Photo"
+                            class="transition ease-linear duration-150 hover:scale-110" />
+
+                    </div>
+                    <div class="trekdescription py-4">
+                        <h3
+                            class="text-netrual-100 text-xl md:text-2xl font-bold mb-3 transition ease-linear delay-150 hover:text-primary">
+                            Himlung Himal Expedition</h3>
+                            <p class="text-ellipse line-clamp-2 overflow-hidden text-neutral-800 mb-4">Himlung Himal (7126m) is situated in one of the remote parts of Nepal-Tibet border, Narphu valley west of Nepal. This mountain is becoming popular among the climbing expedition lovers.</p>
+                        <div class="flex items-center space-x-6">
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-chart"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">Easy</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-clock"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">26 days</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-mountain"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">7,216m</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/images/trekking/trek3.jpg" alt="Trekking Photo"
+                            class="transition ease-linear duration-150 hover:scale-110" />
+
+                        <div class="absolute top-0 right-0">
+                            <div class="date flex bg-primary items-center p-1 md:p-2 lg:p-3 space-x-2 md:space-x-3">
+                                <span><i class="text-white text-xl md:text-2xl icon-CalendarDots"></i></span>
+                                <span class="text-white font-semibold text-base">April-June</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trekdescription py-4">
+                        <h3
+                            class="text-netrual-100 text-xl md:text-2xl font-bold mb-3 transition ease-linear delay-150 hover:text-primary">
+                            Mera Peak Climbing</h3>
+                            <p class="text-ellipse line-clamp-2 overflow-hidden text-neutral-800 mb-4">Mera Peak (6476m) is the highest of Nepal’s ‘trekking peaks’, suitable for anyone who has little or no experience using ice axe and crampons. It is a good introduction to Himalaya Expeditions with finest views of Mt Everest and Lhoste.</p>
+                        <div class="flex items-center space-x-6">
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-chart"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">Easy</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-clock"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">26 days</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <span><i class="text-base md:text-lg text-neutral-800 icon-mountain"></i></span>
+                                <span class="text-base md:text-lg text-neutral-800 font-semibold">7,216m</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-12 md:pt-18 lg:pt-36 pb-11">
+        <div class="container">
+            <div class="flex justify-center flex-col items-center" data-aos="fade-down" data-aos-delay="50"
+                data-aos-duration="1000">
+                <div class="sectiontitle  text-center mb-6">
+                    <h2 class="text-netrual-100 text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold">Get
+                        Updates from the Himalayas</h2>
+                </div>
+                <div class="flex w-full min:w-full md:min-w-[552px] md:w-auto">
+                    <input type="email" id="email"
+                        class="flex-1 outline-none border rounded-none border-r-0 border-neutral-500 text-neutral-800 block w-full py-4 px-6"
+                        placeholder="Your Email" required />
+                    <button type="submit"
+                        class="text-white bg-primary hover:bg-secondary font-bold text-sm py-4 px-6 text-center texm-sm uppercase leading[120%]"
+                        aria-labelledby="Submit">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <img src="assets/images/footer-mountain.png" alt="footer bg" />
+        </div>
+        <div class="py-5 bg-footer -mt-1">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4 xl:gap-24 pb-14 items-center">
+                    <div class="lg:col-span-2">
+                        <img src="assets/images/tophimalaya-logowhite.png" alt="Top Himalaya guide Logo" />
+                        <div class="mt-4 text-white">
+                            <p>Lorem ipsum dolor sit amet consectetur. Libero fermentum malesuada nulla in tincidunt.
+                                Tristique aliquam libero tincidunt semper ultricies et dictumst volutpat.</p>
+                            <a href="#" class="block mt-4 underline">Read More</a>
+                        </div>
+                        <div class="mt-4 flex items-center gap-4">
+                            <img src="assets/images/partners/1.png" alt="Partner Name" class="h-9" />
+                            <img src="assets/images/partners/2.png" alt="Partner Name" class="h-9" />
+                            <img src="assets/images/partners/3.png" alt="Partner Name" class="h-9" />
+                            <img src="assets/images/partners/4.png" alt="Partner Name" class="h-9" />
+                            <img src="assets/images/partners/5.png" alt="Partner Name" class="h-9" />
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 flex flex-wrap justify-between gap-8 sm:gap-4 xl:gap-16">
+                        <div class="basis-full sm:basis-1/4 xl:basis-auto">
+                            <h3 class="font-semibold text-white uppercase">
+                                Mountaineering
+                            </h3>
+                            <ul class="mt-4 flex flex-col space-y-4">
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Mt. Everest
+                                        Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Himlung Himal
+                                        Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Ama Dablam
+                                        Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Manaslu Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Makalu Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Pumori Expedition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="basis-full sm:basis-1/4 xl:basis-auto">
+                            <h3 class="font-semibold text-white uppercase">
+                                Trekking
+                            </h3>
+                            <ul class="mt-4 flex flex-col space-y-4">
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Annapurna trekking</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Langtang trekking</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Khopra trekking</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">EBC trekking</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Gokyo trekking</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="basis-full sm:basis-auto">
+                            <h3 class="font-semibold text-white uppercase">
+                                Connect with us
+                            </h3>
+                            <div class="mt-4 flex items-center gap-4 xl:gap-6">
+                                <a href="https://twitter.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl icon-x1"></span>
+                                    </div>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl icon-instagram"></span>
+                                    </div>
+                                </a>
+                                <a href="https://www.tiktok.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl icon-tiktok"></span>
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl  icon-facebook"></span>
+                                    </div>
+                                </a>
+
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl icon-linkedin"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-8 flex flex-col space-y-4">
+                                <div class="flex items-center">
+                                    <a href="mailto:info@himalayaguides.com"
+                                        class="flex items-center space-x-3 text-white">
+                                        <span class="icon-mail text-xl xl:text-2xl"></span>
+                                        <span class="text-sm xl:text-base">info@himalayaguides.com</span>
+                                    </a>
+                                </div>
+                                <div class="flex items-center">
+                                    <a href="tel:+977-9841237190" class="flex items-center space-x-3 text-white">
+                                        <span class="icon-mail text-xl xl:text-2xl"></span>
+                                        <span class="text-sm xl:text-base">+977-9841237190</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-white copyright pt-3">
+                    <div class="flex flex-wrap gap-1 justify-between text-white text-sm lg:text-base">
+                        <p>All rights reserved ©️ Top Himalaya Guide 2024</p>
+                        <p><span>Design and Developed by </span<span><a href="https://codeilo.com/" target="_blank"
+                                    class="text-white hover:text-primary">Codeilo</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="block lg:hidden bg-white p-2 fixed w-full bottom-0 left-0 right-0 tabbtn flex justify-center items-center gap-4 z-50 border-t gap-2">
+        <button
+            class="w-1/2 btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold">Inquiry</button>
+        <button
+            class="w-1/2 btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">Book
+            Now</button>
+    </div>
+
+    <div id="popup" class="w-screen h-screen fixed inset-0 flex bg-gray-900 bg-opacity-50 hidden z-50 overflow-hidden">
+        <div class="w-full popup-content max-h-[110px]">
+            <div class="bg-white">
+                <div class="container">
+                    <div class="form-groups flex items-center justify-center gap-4 max-w-4xl mx-auto py-8">
+                        <input type="text"
+                            class="search w-full py-4 px-6 bg-transparent rounded-none border border-neutral-500 outline-none focus:border-primary text-neutral-800"
+                            placeholder="Search" />
+                        <button id="close-popup"
+                            class="transition ease-linear duration-100 hover:text-primary hover:scale-110"><span
+                                class="text-xl font-light h-8 w-8">&#x2715;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="assets/js/megamenu.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

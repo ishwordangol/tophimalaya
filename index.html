@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -663,7 +664,7 @@
                   </li>
                   <li>
                     <button
-                      class="bg-white w-12 h-12 rounded-full flex justify-center items-center transition ease-linear duration-150 hover:bg-primary hover:text-white"
+                      class="openmodelbtn bg-white w-12 h-12 rounded-full flex justify-center items-center transition ease-linear duration-150 hover:bg-primary hover:text-white"
                       aria-labelledby="Search"
                     >
                     <i class="icon-search text-2xl"></i>
@@ -673,10 +674,10 @@
               </nav>
               <div class="flex space-x-8 items-center">
                 <button
-                  class="block lg:hidden text-white hover:text-primary"
+                  class="btnsearch openmodelbtn block lg:hidden text-white hover:text-primary"
                   aria-labelledby="Search"
                 >
-                <i class="icon-search text-lg"></i>
+                <i class="icon-search text-xl font-medium"></i>
                 </button>
                 <!-- mobile menu trigger -->
                 <div class="mobile-menu-trigger">
@@ -1028,7 +1029,7 @@
         <h4 class="text-2xl leading-[120%]">Your guide</h4>
         <h2 class="text-3xl lg:text-4xl xl:text-[40px] font-bold lg:leading-[120%] mb-3">Tshering Pande Bhote</h2>
         <p class="text-lg leading-[25px] mb-6">I have climbed since 1996, starting on the 8000m mountains in the Himalaya. IFMGA/NNMGA certified mountain guides (Instructor) from south Asia, gaining his qualification from the New Zealand Mountain Guides Association (NZMGA) & Nepal National Mountain Guide Association (NNMGA) and Ecole Nationale de Ski et d'Alpinisme (ENSA).</p>
-        <button class="btn btn-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-12 texm-sm uppercase leading[120%] font-bold">Learn More</button>
+        <button class="btn btn-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-12 text-sm uppercase leading[120%] font-bold">Learn More</button>
       </div>
     </section>
 
@@ -1202,7 +1203,7 @@
             />
             <button
               type="submit"
-              class="text-white bg-primary hover:bg-secondary font-bold text-sm py-4 px-6 text-center texm-sm uppercase leading[120%]"
+              class="text-white bg-primary hover:bg-secondary font-bold text-sm py-4 px-6 text-center text-sm uppercase leading[120%]"
               aria-labelledby="Submit"
             >
              Subscribe
@@ -1401,6 +1402,23 @@
       </div>
       </div>
     </footer>
+
+    <div id="popup" class="w-screen h-screen fixed inset-0 flex bg-gray-900 bg-opacity-50 hidden z-50 overflow-hidden">
+      <div class="w-full popup-content max-h-[110px]">
+        <div class="bg-white">
+          <div class="container">
+          <div class="form-groups flex items-center justify-center gap-4 max-w-4xl mx-auto py-8">
+            <input
+            type="text"
+            class="search w-full py-4 px-6 bg-transparent rounded-none border border-neutral-500 outline-none focus:border-primary text-neutral-800"
+            placeholder="Search"
+          />
+          <button id="close-popup" class="transition ease-linear duration-100 hover:text-primary hover:scale-110"><span class="text-xl font-light h-8 w-8">&#x2715;</span></button>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>

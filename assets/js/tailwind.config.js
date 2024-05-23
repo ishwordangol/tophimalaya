@@ -13,8 +13,10 @@ tailwind.config = {
         baseblack: '#0A0A0B',
         primary: '#019FE8',
         secondary: '#AAB9C5',
-        primarylight: '#D8F2FF',
+        primarylight: '#F0FAFF',
         secondarylight: '#E7EBEF',
+        thggreen: '#15B097',
+        thgred: '#C03744',
         facebook: '#4B69B0',
         footer: '#111111',
         twitter: '#0F1419',
@@ -46,7 +48,7 @@ tailwind.config = {
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
-      'xl': '1366px',
+      'xl': '1280px',
     },
 
     spacing: {
