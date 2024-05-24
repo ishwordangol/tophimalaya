@@ -555,6 +555,10 @@ input[type="checkbox"]:before {
     height: 260px;
   }
 
+  .tab-contents.tab-content-sticky > div {
+    padding-top: 100px;
+  }
+
   .itineraryWrapper ul li > div {
     display: flex;
     gap: 16px;
@@ -617,6 +621,10 @@ input[type="checkbox"]:before {
 }
 
 @media screen and (max-width: 768px) {
+  .tab-contents.tab-content-sticky > div {
+    padding-top: 80px;
+  }
+
   table thead {
     border: none;
     clip: rect(0 0 0 0);
