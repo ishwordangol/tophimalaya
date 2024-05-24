@@ -666,6 +666,7 @@
                     <button
                       class="openmodelbtn bg-white w-12 h-12 rounded-full flex justify-center items-center transition ease-linear duration-150 hover:bg-primary hover:text-white"
                       aria-labelledby="Search"
+                      data-target="#searchpopup"
                     >
                     <i class="icon-search text-2xl"></i>
                     </button>
@@ -676,6 +677,7 @@
                 <button
                   class="btnsearch openmodelbtn block lg:hidden text-white hover:text-primary"
                   aria-labelledby="Search"
+                  data-target="#searchpopup"
                 >
                 <i class="icon-search text-xl font-medium"></i>
                 </button>
@@ -1403,7 +1405,7 @@
       </div>
     </footer>
 
-    <div id="popup" class="w-screen h-screen fixed inset-0 flex bg-gray-900 bg-opacity-50 hidden z-50 overflow-hidden">
+    <div id="searchpopup" class="popup w-screen h-screen fixed inset-0 flex bg-gray-900 bg-opacity-50 hidden z-50 overflow-hidden">
       <div class="w-full popup-content max-h-[110px]">
         <div class="bg-white">
           <div class="container">

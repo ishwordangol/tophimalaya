@@ -651,6 +651,7 @@
                       <button
                         class="openmodelbtn bg-white w-12 h-12 rounded-full flex justify-center items-center transition ease-linear duration-150 hover:bg-primary hover:text-white"
                         aria-labelledby="Search"
+                        data-target="#searchpopup"
                       >
                       <i class="icon-search text-2xl"></i>
                       </button>
@@ -660,6 +661,7 @@
                 <div class="flex space-x-8 items-center">
                   <button
                     class="btnsearch openmodelbtn block lg:hidden text-white hover:text-primary"
+                    data-target="#searchpopup"
                     aria-labelledby="Search"
                   >
                   <i class="icon-search text-xl font-medium"></i>
@@ -715,7 +717,7 @@
 
                         <div class="hidden tabbtn lg:flex items-center gap-4">
                             <button
-                                class="btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold">Inquiry</button>
+                                class="openmodelbtn btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold" data-target="#inquirypopup">Inquiry</button>
                             <button
                                 class="btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">Book
                                 Now</button>
@@ -2326,13 +2328,13 @@
 
     <div class="block lg:hidden bg-white p-2 fixed w-full bottom-0 left-0 right-0 tabbtn flex justify-center items-center gap-4 z-50 border-t gap-2">
         <button
-            class="w-1/2 btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold">Inquiry</button>
+            class="openmodelbtn w-1/2 btn btn-white bg-white border border-neutral-200 hover:bg-primary hover:border-primary hover:text-white py-3 px-6 text-sm uppercase leading[120%] font-bold"  data-target="#inquirypopup">Inquiry</button>
         <button
             class="w-1/2 btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">Book
             Now</button>
     </div>
 
-    <div id="popup" class="w-screen h-screen fixed inset-0 flex bg-gray-900 bg-opacity-50 hidden z-50 overflow-hidden">
+    <div id="searchpopup" class="popup w-screen h-screen fixed inset-0 flex bg-gray-900 bg-opacity-50 hidden z-50 overflow-hidden">
         <div class="w-full popup-content max-h-[110px]">
             <div class="bg-white">
                 <div class="container">
@@ -2340,9 +2342,56 @@
                         <input type="text"
                             class="search w-full py-4 px-6 bg-transparent rounded-none border border-neutral-500 outline-none focus:border-primary text-neutral-800"
                             placeholder="Search" />
-                        <button id="close-popup"
+                        <button class="close-popup"
                             class="transition ease-linear duration-100 hover:text-primary hover:scale-110"><span
                                 class="text-xl font-light h-8 w-8">&#x2715;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="inquirypopup" class="popup w-screen h-screen fixed inset-0 flex bg-gray-900 bg-opacity-50 hidden z-50 overflow-hidden">
+        <div class="w-11/12 md:w-full md:max-w-[660px] flex justify-center items-center popup-content mx-auto">
+            <div class="w-full bg-white p-10">
+                    <div class="flex justify-between items-center mb-3">
+                        <h2 class="text-3xl md:text-4xl lg:text-[40px] lg:leading-[120%] font-bold text-primary">Inquiry</h2>
+                        <button class="close-popup"
+                            class="transition ease-linear duration-100 hover:text-primary hover:scale-110"><span
+                                class="text-xl font-light h-8 w-8">&#x2715;</span></button>
+                    </div>
+                    <p>Have Some Questions About <strong>MT. Everest Expedition (8848.86M) - South?</strong></p>
+                    <div class="mt-8 grid grid-cols-1 gap-4">
+                    <div class="form-groups">
+                        <input type="text"
+                            class="search w-full py-4 px-6 bg-transparent rounded-none border border-neutral-500 outline-none focus:border-primary text-neutral-800"
+                            placeholder="Full Name" />
+                        
+                    </div>
+                    <div class="form-groups">
+                        <input type="email"
+                            class="search w-full py-4 px-6 bg-transparent rounded-none border border-neutral-500 outline-none focus:border-primary text-neutral-800"
+                            placeholder="Email" />
+                        
+                    </div>
+
+                    <div class="form-groups">
+                        <input type="number"
+                            class="search w-full py-4 px-6 bg-transparent rounded-none border border-neutral-500 outline-none focus:border-primary text-neutral-800"
+                            placeholder="Contact Number" />
+                        
+                    </div>
+
+                    <div class="form-groups">
+                       <textarea rows="5"
+                            class="search w-full py-4 px-6 bg-transparent rounded-none border border-neutral-500 outline-none focus:border-primary text-neutral-800"
+                            placeholder="Your Message"></textarea>
+                        
+                    </div>
+                    <div class="form-group flex justify-end">
+                        <button
+                        class="btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">Send Your
+                        Inquiry</button>
                     </div>
                 </div>
             </div>

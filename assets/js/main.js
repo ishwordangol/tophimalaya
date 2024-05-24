@@ -314,25 +314,38 @@ $(".gallerySlider").slick({
 
 $(document).on('click', '.openmodelbtn', function (event) {
   event.preventDefault();
-  $('body').css('overflow', 'hidden'); // Hide overflow
-  $('#popup').removeClass('hidden').hide().fadeIn();
-  $('.search').focus();
+  var target = $(this).data('target');
+  openPopup(target);
 });
 
-function hidePopup() {
-  $('#popup').fadeOut(function () {
+// Close popup when the close button inside it is clicked
+$(document).on('click', '.close-popup', function (event) {
+  event.preventDefault();
+  var popup = $(this).closest('.popup');
+  closePopup(popup);
+});
+
+// Close popup when clicking outside of it
+$(document).on('click', '.popup', function (event) {
+  if ($(event.target).hasClass('popup')) {
+    var popup = $(event.target);
+    closePopup(popup);
+  }
+});
+
+function openPopup(target) {
+  $('body').css('overflow', 'hidden');
+  $(target).removeClass('hidden').hide().fadeIn(function () {
+    $(this).find('.search').focus();
+  });
+}
+
+function closePopup(popup) {
+  popup.fadeOut(function () {
     $(this).addClass('hidden');
     $('body').css('overflow', ''); // Restore overflow
   });
 }
-
-$(document).on('click', '#close-popup', hidePopup);
-
-$(document).on('click', '#popup', function (event) {
-  if (event.target === this) {
-    hidePopup();
-  }
-});
 
 // horizontal tab
 
