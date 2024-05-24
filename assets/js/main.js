@@ -278,14 +278,14 @@ $(".gallerySlider").slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   // centerMode: true,
-  initialSlide: 0,
+  // initialSlide: 0,
   // centerPadding: '120px',
   appendArrows: $('.gallerySlider__arrows'),
   prevArrow: '<button class="flex items-center justify-center h-8 w-8 rounded-full bg-primary opacity-50 text-white hover:opacity-100 transition ease-linear duration-100"><span class="icon-arrow-left"><span></button>',
   nextArrow: '<button class="flex items-center justify-center h-8 w-8 rounded-full bg-primary opacity-50 text-white hover:opacity-100 transition ease-linear duration-100"><span class="icon-arrow-right"><span></button>',
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 639,
       settings: {
         dots: false,
         arrows: false,
@@ -389,6 +389,33 @@ $(".readalloverview").click(function () {
   } else {
     btnText.text("Read More");
   }
+});
+
+// toggle 
+function handleToggle($button, $paragraph) {
+  $button.click(function () {
+    $paragraph.toggleClass('show');
+    $button.toggleClass('icon-chevron-down icon-chevron-up');
+  });
+}
+
+function checkScreenWidth() {
+  if (window.innerWidth < 768) {
+    $('.itinerary-description').each(function () {
+      var $button = $(this).find('.itinerarybtn');
+      var $paragraph = $(this).find('.itineraryparaph');
+      handleToggle($button, $paragraph);
+    });
+  } else {
+    $('.itinerarybtn').off('click');
+    $('.itineraryparaph').removeClass('show');
+    $('.itinerarybtn').removeClass('icon-chevron-up').addClass('icon-chevron-down');
+  }
+}
+
+checkScreenWidth();
+$(window).resize(function () {
+  checkScreenWidth();
 });
 
 // expansion panel

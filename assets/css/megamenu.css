@@ -203,7 +203,7 @@ ul.menu-main {
   .header-nav .menu {
     position: fixed;
     width: 320px;
-    background-color: #ffffff;
+    background-color: #2b2829;
     left: 0;
     top: 0;
     height: 100dvh;
@@ -229,7 +229,7 @@ ul.menu-main {
     height: 50px;
     padding: 0 50px 0 15px;
     display: block;
-    color: #0a0a0b;
+    color: #ffffff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
   .header-nav .menu > ul > li > a i {

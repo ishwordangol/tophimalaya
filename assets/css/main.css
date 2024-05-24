@@ -260,10 +260,6 @@ input[type="checkbox"]:before {
   border-radius: 12px;
 }
 
-.gallerySlider .slick-list .slickbox img {
-  height: 304px;
-}
-
 .gallerySlider .slick-list .slickbox.slick-current img {
   height: 370px;
 }
@@ -276,9 +272,9 @@ input[type="checkbox"]:before {
   margin: 0 -16px;
 }
 
-.gallerySlider .slick-list {
+/* .gallerySlider .slick-list {
   margin-left: -136px;
-}
+} */
 
 .bounce {
   animation: bounce 1.5s infinite linear;
@@ -421,7 +417,13 @@ input[type="checkbox"]:before {
   color: #fff;
 }
 
-.itineraryWrapper ul li > div .itineraryContent .itinerary-description > p {
+.itineraryWrapper
+  ul
+  li
+  > div
+  .itineraryContent
+  .itinerary-description
+  > .itineraryparaph {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -433,9 +435,9 @@ input[type="checkbox"]:before {
   li
   > div
   .itineraryContent
-  .itinerary-description:hover
-  > p {
-  max-height: 120px; /* Adjust according to the content height */
+  .itinerary-description
+  > .itineraryparaph.show {
+  max-height: 200px; /* Adjust according to the content height */
   opacity: 1;
 }
 
@@ -532,14 +534,129 @@ input[type="checkbox"]:before {
   color: #7a56a4;
 }
 
+@media screen and (min-width: 768px) {
+  .itineraryWrapper
+    ul
+    li
+    > div
+    .itineraryContent
+    .itinerary-description:hover
+    > .itineraryparaph {
+    max-height: 200px; /* Adjust according to the content height */
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 1366px) {
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+  .gallerySlider .slick-list .slickbox.slick-current img {
+    height: 260px;
+  }
+
+  .itineraryWrapper ul li > div {
+    display: flex;
+    gap: 16px;
+    align-items: start;
+    flex-direction: row-reverse;
+  }
+
+  .itineraryWrapper ul li:nth-child(odd) > div .itineraryContent,
+  .itineraryWrapper ul li:nth-child(even) > div .itineraryContent {
+    display: inline-block;
+    flex: 1;
+  }
+
+  .itineraryWrapper ul li > div .itinerary-days {
+    left: 0;
+    transform: none;
+    z-index: 30;
+  }
+
+  .itineraryWrapper ul li > div .itineraryContent .itinerary-description {
+    position: static;
+    width: auto;
+    text-align: left;
+  }
+
+  .itineraryWrapper ul li > div .itinerary-days .itinerary-horizontal-line {
+    display: none;
+  }
+
+  .itineraryWrapper
+    ul
+    li:nth-child(even)
+    > div
+    .itineraryContent
+    .itinerary-description {
+    text-align: left;
+  }
+
+  .itineraryWrapper
+    ul
+    li:nth-child(even)
+    > div
+    .itineraryContent
+    .itinerary-description
+    > div {
+    justify-content: start;
+  }
+
+  .itineraryWrapper
+    ul
+    li:nth-child(even)
+    > div
+    .itinerary-days
+    .itinerary-horizontal-line {
+    right: unset;
+    margin-right: 0;
+    left: 100%;
+    margin-left: -1px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    display: block;
+    background: #fff;
+    margin-bottom: 16px;
+  }
+
+  table td {
+    border-bottom: 1px solid #e7ebef;
+    display: block;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
+  .gallerySlider .slick-slide {
+    margin: 0 8px;
+  }
+
+  .gallerySlider .slick-list {
+    margin: 0 -8px;
+  }
+  .gallerySlider .slick-list .slickbox.slick-current img {
+    height: 160px;
+  }
 }
