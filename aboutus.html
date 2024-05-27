@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>About Us</title>
+    <!-- Favicon links -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/icomoon.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="assets/css/icomoon.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/megamenu.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+    <header class="header header-down">
+        <div class="header-nav">
+            <div class="container">
+                <div class="flex justify-between items-center">
+                    <div class="header-item">
+                        <div class="logo">
+                            <a href="index.html" aria-label="Logo Link">
+                                <img src="assets/images/tophimalaya-logowhite.png" alt="Top Himalaya Guides"
+                                    class="h-12 sm:h-full logo-white" />
+                                <img src="assets/images/tophimalaya-logomain.png" alt="Top Himalaya Guides"
+                                    class="h-12 sm:h-full logo-primary hidden" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- menu start here -->
+                    <div class="header-item">
+                        <div class="menu-overlay"></div>
+                        <nav class="menu">
+                            <div class="mobile-menu-head">
+                                <div class="go-back flex items-center justify-center">
+                                    <i class="icon-chevron-left text-2xl"></i></a>
+                                </div>
+                                <div class="current-menu-title"></div>
+                                <div class="mobile-menu-close">&times;</div>
+                            </div>
+                            <ul class="menu-main">
+                                <li class="menu-item-has-children mega-menu-menu-items">
+                                    <a href="#" class="flex items-center"><span class="mr-2">Trekking</span>
+                                        <i class="icon-chevron-down text-2xl"></i></a>
+                                    <div class="sub-menu mega-menu w-full">
+                                        <div class="tab-section grid grid-cols-1 lg:grid-cols-4 bg-neutral-900">
+                                            <div class="tabs px-20 py-8 flex flex-col items-end justify-between">
+                                                <div class="flex flex-col space-y-4">
+                                                    <button
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary"
+                                                        data-tab="tab1">
+                                                        8000M
+                                                    </button>
+                                                    <button data-tab="tab2"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        7000M
+                                                    </button>
+                                                    <button data-tab="tab3"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        6000M
+                                                    </button>
+                                                    <button data-tab="tab4"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        5800M
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a href="#"
+                                                        class="text-lg text-white font-semibold hover:text-primary">View
+                                                        All</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab_container lg:col-span-3 bg-neutral-1000">
+                                                <h3 class="d_active tab_drawer_heading" data-tab="tab1">
+                                                    8000M
+                                                </h3>
+                                                <div id="tab1"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab1 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab2">
+                                                    7000M
+                                                </h3>
+                                                <div id="tab2"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab2 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab3">
+                                                    6000M
+                                                </h3>
+                                                <div id="tab3"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab3 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab4">
+                                                    5800M
+                                                </h3>
+                                                <div id="tab4"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab4 -->
+                                            </div>
+                                            <!-- .tab_container -->
+                                        </div>
+                                        <a href="https://www.google.com/"
+                                            class="text-center w-full inline-block py-4 px-5 text-white hover:bg-primary lg:hidden">
+                                            View All
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-children mega-menu-menu-items">
+                                    <a href="#" class="flex items-center"><span class="mr-2">Mountaineering</span>
+                                        <i class="icon-chevron-down text-2xl"></i></a>
+                                    <div class="sub-menu mega-menu w-full">
+                                        <div class="tab-section grid grid-cols-1 lg:grid-cols-4 bg-neutral-900">
+                                            <div class="tabs px-20 py-8 flex flex-col items-end justify-between">
+                                                <div class="flex flex-col space-y-4">
+                                                    <button
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary"
+                                                        data-tab="tab5">
+                                                        8000M
+                                                    </button>
+                                                    <button data-tab="tab6"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        7000M
+                                                    </button>
+                                                    <button data-tab="tab7"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        6000M
+                                                    </button>
+                                                    <button data-tab="tab8"
+                                                        class="tab-link text-lg text-white font-semibold hover:text-primary">
+                                                        5800M
+                                                    </button>
+                                                </div>
+                                                <div>
+                                                    <a href="#"
+                                                        class="text-lg text-white font-semibold hover:text-primary">View
+                                                        All</a>
+                                                </div>
+                                            </div>
+                                            <div class="tab_container col-span-3 bg-neutral-1000">
+                                                <h3 class="d_active tab_drawer_heading" data-tab="tab5">
+                                                    8000M
+                                                </h3>
+                                                <div id="tab5"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab1 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab6">
+                                                    7000M
+                                                </h3>
+                                                <div id="tab6"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab2 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab7">
+                                                    6000M
+                                                </h3>
+                                                <div id="tab7"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab3 -->
+                                                <h3 class="tab_drawer_heading" data-tab="tab8">
+                                                    5800M
+                                                </h3>
+                                                <div id="tab8"
+                                                    class="tab-content px-8 lg:px-20 py-8 flex flex-col justify-between">
+                                                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8">
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/MountEverest.jpg"
+                                                                alt="Mount Everest"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Mount Everest
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/ChoOyu.jpg" alt="Cho Oyu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Cho Oyu
+                                                            </h3>
+                                                        </a>
+                                                        <a href="#">
+                                                            <img src="assets/images/megamenu/Makalu.jpg" alt="Makalu"
+                                                                class="w-full h-auto lg:h-56 object-cover ease-linear duration-200 border-4 border-transparent hover:border-primary" />
+                                                            <h3
+                                                                class="mt-1 lg:mt-3 text-sm lg:text-base text-basewhite font-semibold hover:text-primary">
+                                                                Makalu
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <a href="#"
+                                                            class="text-lg text-white font-semibold hover:text-primary">
+                                                            View All
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- #tab4 -->
+                                            </div>
+                                            <!-- .tab_container -->
+                                        </div>
+                                        <a href="https://www.google.com/"
+                                            class="text-center w-full inline-block py-4 px-5 text-white hover:bg-primary lg:hidden">
+                                            View All
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#" class="flex items-center"><span class="mr-2">Training</span>
+                                        <i class="icon-chevron-down text-2xl"></i></a>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="#">Training 1</a></li>
+                                            <li><a href="#">Training 2</a></li>
+                                            <li><a href="#">Training 3</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu-item-has-children">
+                                    <a href="#" class="flex items-center"><span class="mr-2">More</span>
+                                        <i class="icon-chevron-down text-2xl"></i></a>
+                                    <div class="sub-menu single-column-menu">
+                                        <ul>
+                                            <li><a href="#">Login</a></li>
+                                            <li><a href="#">Register</a></li>
+                                            <li><a href="#">Faq</a></li>
+                                            <li><a href="#">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button
+                                        class="openmodelbtn bg-white w-12 h-12 rounded-full flex justify-center items-center transition ease-linear duration-150 hover:bg-primary hover:text-white"
+                                        aria-labelledby="Search" data-target="#searchpopup">
+                                        <i class="icon-search text-2xl"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="flex space-x-8 items-center">
+                            <button class="btnsearch openmodelbtn block lg:hidden text-white hover:text-primary"
+                                aria-labelledby="Search" data-target="#searchpopup">
+                                <i class="icon-search text-xl font-medium"></i>
+                            </button>
+                            <!-- mobile menu trigger -->
+                            <div class="mobile-menu-trigger">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- menu end here -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- End of header section -->
+    <section class="breadcrumbWrapper relative">
+        <img src="assets/images/about-breadcrumb.jpg" alt="featured image" class="w-full h-[600px] object-cover" />
+        <div class="absolute inset-0 w-full h-full bg-black/20">
+        </div>
+        <div class="absolute top-1/2 -translate-y-1/2 w-full mx-auto">
+            <div class="container">
+                <h1 class="rubik text-4xl md:text-5xl lg:text-[64px] font-bold max-w-4xl text-white">
+                    About Us
+                </h1>
+            </div>
+        </div>
+
+    </section>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                    <div>
+                        <h2
+                            class="text-netrual-900 text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold mb-3">
+                            Who we are</h2>
+                        <p class="text-neutral-800">Top Himalaya Guides stands out due to its distinctive ownership and operation by Nepalese
+                            IFMGA certified international mountain guides. This ownership ensures a profound
+                            understanding of the Himalayan terrain and culture, as well as a commitment to the highest
+                            standards of safety and expertise. The mountains aren't just a workplace but a cherished
+                            home for the guides, who take immense pleasure in sharing their intimate knowledge and
+                            experiences with climbers and trekkers from all corners of the globe. This genuine
+                            connection to the mountains fosters a welcoming and inclusive atmosphere, where adventurers
+                            of all backgrounds can come together to explore and appreciate the wonders of the Himalayas.
+                            <br /><br />
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                    <picture>
+                        <img src="assets/images/Aboutus/about1.jpg" alt="About Us Pic" class="w-full" />
+                    </picture>
+                </div>
+                <div class="py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+                    <picture class="order-last md:order-first">
+                        <img src="assets/images/Aboutus/about2.jpg" alt="About Us Pic" class="w-full" />
+                    </picture>
+                    <div>
+                        <h4 class="text-neutral-1000 text-2xl leading-[120%]">Your guide</h4>
+                        <h2
+                            class="text-netrual-900 text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold mb-3">
+                            Tshering Pande Bhote</h2>
+                        <p class="text-neutral-800">Company director is IFMGA/NNMGA Certified Mountain Guide (Instructor).Long line Helicopter
+                            Rescue Specialist Tshering Pande Bhote has already been an accomplished Top Himalaya Guides,
+                            having guided clients Seven times to the top of Mt. Everest, before making several trips to
+                            New Zealand and France to become one of the first Nepalese to gain the international IFMGA
+                            certified mountain guide qualification. In the process he excelled in all areas of technical
+                            climbing, putting up a new route on the south face of Mt Cook, making the first ascent (in
+                            winter) of the east face headwall of Haidinger, and soloing the classic steep south face of
+                            Douglas Peak (also in winter).
+                        </p>
+                        <div class="mt-8 form-group flex">
+                            <button
+                            class="min-w-50 btn btn-primary border border-primary bg-primary hover:bg-white hover:text-primary text-white py-3 px-6 text-sm uppercase leading[120%] font-bold whitespace-nowrap">
+                            Learn More</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="py-12 md:py-16 gap-8 md:gap-10">
+                    <h2
+                    class="text-netrual-100 text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold max-w-[519px]">
+                    Why choose Top Himalaya Guides?</h2>
+                    <div class="mt-12 lg:mt-18 grid lg:grid-cols-2 gap-8">
+                        <div class="flex gap-4 space-y-3">
+                            <div class="flex justify-center items-center w-16 h-16 md:w-[100px] md:h-[100px] bg-primary rounded-full">
+                                <img src="assets/images/Aboutus/home-ground.png" alt="Home Ground" class="w-10 md:h-auto"/>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-neutral-1000 leading-[120%]">Home Ground Advantage</h3>
+                                <p class="text-lg text-neutral-800">Leveraging extensive familiarity and comfort with their climbing environment for a competitive edge.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 space-y-3">
+                            <div class="flex justify-center items-center w-16 h-16 md:w-[100px] md:h-[100px] bg-primary rounded-full">
+                                <img src="assets/images/Aboutus/international-climbing.png" alt="International Climbing" class="w-10 md:h-auto"/>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-neutral-1000 leading-[120%]">International Climbing Experience</h3>
+                                <p class="text-lg text-neutral-800">Broadening expertise beyond local terrain, enriching skills through exposure to diverse climbing environments worldwide.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 space-y-3">
+                            <div class="flex justify-center items-center w-16 h-16 md:w-[100px] md:h-[100px] bg-primary rounded-full">
+                                <img src="assets/images/Aboutus/effective-management.png" alt="Effective" class="w-10 md:h-auto"/>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-neutral-1000 leading-[120%]">Effective Management</h3>
+                                <p class="text-lg text-neutral-800">Your safety and satisfaction are our priority.  We deliver exceptional customer care, meticulous planning, and flawless execution led by our experienced management team.  This combination of mountaineering expertise and top-notch logistics ensures a smooth and unforgettable Himalayan adventure.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 space-y-3">
+                            <div class="flex justify-center items-center w-16 h-16 md:w-[100px] md:h-[100px] bg-primary rounded-full">
+                                <img src="assets/images/Aboutus/well-managed.png" alt="Well Managed" class="w-10 md:h-auto"/>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-neutral-1000 leading-[120%]">Well Managed Logistics</h3>
+                                <p class="text-lg text-neutral-800">We offer seamless travel from airport pickup to camping with comfortable lodging, and top-notch equipment ensure a hassle-free adventure,  fresh food, reliable weather updates, and easy communication keep you stress-free on your trek.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 space-y-3">
+                            <div class="flex justify-center items-center w-16 h-16 md:w-[100px] md:h-[100px] bg-primary rounded-full">
+                                <img src="assets/images/Aboutus/reliable.png" alt="Reliable and Trustworthy" class="w-10 md:h-auto"/>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-neutral-1000 leading-[120%]">Reliable and Trustworthy</h3>
+                                <p class="text-lg text-neutral-800">Our best advertisement?  Our happy clients who return for more. Unforgettable adventures start with us.  Our team's expertise, experience, and unwavering commitment to exceptional service ensure a trip that exceeds expectations.  We combine meticulous planning, a strong network, and dedicated customer support to create a seamless and awe-inspiring Himalayan experience.  </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 space-y-3">
+                            <div class="flex justify-center items-center w-16 h-16 md:w-[100px] md:h-[100px] bg-primary rounded-full">
+                                <img src="assets/images/Aboutus/experience.png" alt="Experience and Qualifications on Highest Peaks" class="w-10 md:h-auto"/>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-neutral-1000 leading-[120%]">Experience and Qualifications on Highest Peaks</h3>
+                                <p class="text-lg text-neutral-800">Mastery gained from conquering some of the world's tallest mountains, showcasing deep expertise in high-altitude climbing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="pt-12 md:pt-18 lg:pt-36 pb-11">
+        <div class="container">
+            <div class="flex justify-center flex-col items-center" data-aos="fade-down" data-aos-delay="50"
+                data-aos-duration="1000">
+                <div class="sectiontitle  text-center mb-6">
+                    <h2
+                        class="text-netrual-100 text-2xl sm:text-3xl lg:text-4xl xl:text-[40px] lg:leading-[120%] font-bold">
+                        Get
+                        Updates from the Himalayas</h2>
+                </div>
+                <div class="flex w-full min:w-full md:min-w-[552px] md:w-auto">
+                    <input type="email" id="email"
+                        class="flex-1 outline-none border rounded-none border-r-0 border-neutral-500 text-neutral-800 block w-full py-4 px-6"
+                        placeholder="Your Email" required />
+                    <button type="submit"
+                        class="text-white bg-primary hover:bg-secondary font-bold text-sm py-4 px-6 text-center texm-sm uppercase leading[120%]"
+                        aria-labelledby="Submit">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <img src="assets/images/footer-mountain.png" alt="footer bg" />
+        </div>
+        <div class="py-5 bg-footer -mt-1">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-4 xl:gap-24 pb-14 items-center">
+                    <div class="lg:col-span-2">
+                        <img src="assets/images/tophimalaya-logowhite.png" alt="Top Himalaya guide Logo" />
+                        <div class="mt-4 text-white">
+                            <p>Lorem ipsum dolor sit amet consectetur. Libero fermentum malesuada nulla in tincidunt.
+                                Tristique aliquam libero tincidunt semper ultricies et dictumst volutpat.</p>
+                            <a href="#" class="block mt-4 underline">Read More</a>
+                        </div>
+                        <div class="mt-4 flex items-center gap-4">
+                            <img src="assets/images/partners/1.png" alt="Partner Name" class="h-9" />
+                            <img src="assets/images/partners/2.png" alt="Partner Name" class="h-9" />
+                            <img src="assets/images/partners/3.png" alt="Partner Name" class="h-9" />
+                            <img src="assets/images/partners/4.png" alt="Partner Name" class="h-9" />
+                            <img src="assets/images/partners/5.png" alt="Partner Name" class="h-9" />
+                        </div>
+                    </div>
+                    <div class="lg:col-span-3 flex flex-wrap justify-between gap-8 sm:gap-4 xl:gap-16">
+                        <div class="basis-full sm:basis-1/4 xl:basis-auto">
+                            <h3 class="font-semibold text-white uppercase">
+                                Mountaineering
+                            </h3>
+                            <ul class="mt-4 flex flex-col space-y-4">
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Mt. Everest
+                                        Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Himlung Himal
+                                        Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Ama Dablam
+                                        Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Manaslu Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Makalu Expedition</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Pumori Expedition</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="basis-full sm:basis-1/4 xl:basis-auto">
+                            <h3 class="font-semibold text-white uppercase">
+                                Trekking
+                            </h3>
+                            <ul class="mt-4 flex flex-col space-y-4">
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Annapurna trekking</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Langtang trekking</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Khopra trekking</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">EBC trekking</a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="Mountaineering footer list"
+                                        class="text-sm font-medium text-white hover:text-primary">Gokyo trekking</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="basis-full sm:basis-auto">
+                            <h3 class="font-semibold text-white uppercase">
+                                Connect with us
+                            </h3>
+                            <div class="mt-4 flex items-center gap-4 xl:gap-6">
+                                <a href="https://twitter.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl icon-x1"></span>
+                                    </div>
+                                </a>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl icon-instagram"></span>
+                                    </div>
+                                </a>
+                                <a href="https://www.tiktok.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl icon-tiktok"></span>
+                                    </div>
+                                </a>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl  icon-facebook"></span>
+                                    </div>
+                                </a>
+
+                                <a href="https://www.linkedin.com/" target="_blank">
+                                    <div class="transition-all ease-linear hover:text-primary text-white">
+                                        <span class="text-xl xl:text-2xl icon-linkedin"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="mt-8 flex flex-col space-y-4">
+                                <div class="flex items-center">
+                                    <a href="mailto:info@himalayaguides.com"
+                                        class="flex items-center space-x-3 text-white">
+                                        <span class="icon-mail text-xl xl:text-2xl"></span>
+                                        <span class="text-sm xl:text-base">info@himalayaguides.com</span>
+                                    </a>
+                                </div>
+                                <div class="flex items-center">
+                                    <a href="tel:+977-9841237190" class="flex items-center space-x-3 text-white">
+                                        <span class="icon-mail text-xl xl:text-2xl"></span>
+                                        <span class="text-sm xl:text-base">+977-9841237190</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-white copyright pt-3">
+                    <div class="flex flex-wrap gap-1 justify-between text-white text-sm lg:text-base">
+                        <p>All rights reserved ©️ Top Himalaya Guide 2024</p>
+                        <p><span>Design and Developed by </span<span><a href="https://codeilo.com/" target="_blank"
+                                    class="text-white hover:text-primary">Codeilo</a></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="searchpopup"
+        class="popup w-screen h-screen fixed inset-0 flex bg-gray-900 bg-opacity-50 hidden z-50 overflow-hidden">
+        <div class="w-full popup-content max-h-[110px]">
+            <div class="bg-white">
+                <div class="container">
+                    <div class="form-groups flex items-center justify-center gap-4 max-w-4xl mx-auto py-8">
+                        <input type="text"
+                            class="search w-full py-4 px-6 bg-transparent rounded-none border border-neutral-500 outline-none focus:border-primary text-neutral-800"
+                            placeholder="Search" />
+                        <button
+                            class="close-popup transition ease-linear duration-100 hover:text-primary hover:scale-110"><span
+                                class="text-xl font-light h-8 w-8">&#x2715;</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="assets/js/megamenu.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
