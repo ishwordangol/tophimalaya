@@ -706,7 +706,7 @@
     </section>
 
     <main>
-       <section class="ourBlogsWrapper pt-16 pb-34">
+       <section class="ourBlogsWrapper pt-12 md:pt-16 pb-12 md:pb-16 lg:pb-34">
         <div class="container">
             <div class="blogwrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
                 <a href="#" class="bloglist block relative transition-all duration-150 ease-linear">
@@ -782,7 +782,14 @@
                     </div>
                   </a>
             </div>
-            <div class="pagination"></div>
+            <div id="pagination-container" class="mt-12 md:mt-18 flex justify-end">
+              <ul class="flex items-center gap-4">
+                <li class="active"><a href="#" class="flex justify-center items-center h-8 w-8 rounded-full current prev"><span class="icon-arrow-left"></span></a></li>
+                <li class="active"><span class="current">1</span></li>
+                <li><a href="#" class="page-link">2</a></li>
+                <li><a href="#" class="page-link">3</a></li>
+                <li><a href="#" class="page-link">...</a></li>
+                <li><a href="#" class="flex justify-center items-center h-8 w-8 rounded-full page-link next"><span class="icon-arrow-right"></span></a></li></ul></div>
         </div>
        </section>
     </main>

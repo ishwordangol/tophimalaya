@@ -453,29 +453,4 @@ $(".expansionlist > a").on("click", function (e) {
   e.preventDefault();
 });
 
-// pagination
 
-var itemsPerPage = 4;
-var items = $(".bloglist");
-var totalPages = Math.ceil(items.length / itemsPerPage);
-
-function showPage(page) {
-  items.hide();
-  var start = (page - 1) * itemsPerPage;
-  var end = start + itemsPerPage;
-  items.slice(start, end).show();
-}
-
-function createPagination() {
-  for (var i = 1; i <= totalPages; i++) {
-    $(".pagination").append("<button class='page-btn'>" + i + "</button>");
-  }
-  $(".page-btn").on("click", function () {
-    var page = $(this).text();
-    showPage(page);
-  });
-}
-
-// Initialize the pagination
-createPagination();
-showPage(1); // Show the first page initially
