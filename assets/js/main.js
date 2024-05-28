@@ -453,4 +453,58 @@ $(".expansionlist > a").on("click", function (e) {
   e.preventDefault();
 });
 
+// quantity increase & decrease
+
+$(document).on("click", ".qty-increase", function () {
+  var num = $(this).closest('.relative').find(".qty-number");
+  var curr_quantity = parseInt(num.val());
+
+  if (!isNaN(curr_quantity) && curr_quantity < 1000) {
+    num.val(curr_quantity + 1);
+  }
+});
+
+// Decrease quantity
+$(document).on("click", ".qty-decrease", function () {
+  var num = $(this).closest('.relative').find(".qty-number");
+  var curr_quantity = parseInt(num.val());
+
+  if (!isNaN(curr_quantity) && curr_quantity > 1) {
+    num.val(curr_quantity - 1);
+  }
+});
+
+// Additional input validation to ensure the value is within the range 1-1000
+$(document).on("input", ".qty-number", function () {
+  var num = $(this);
+  var curr_quantity = parseInt(num.val());
+
+  if (isNaN(curr_quantity) || curr_quantity < 1) {
+    num.val(1);
+  } else if (curr_quantity > 1000) {
+    num.val(1000);
+  }
+});
+
+// toggle
+
+$(document).on("change", ".toggle-checkbox", function () {
+  var toggleBackground = $(this).siblings(".toggle-btn");
+  if ($(this).is(":checked")) {
+    toggleBackground.removeClass("bg-neutral-200").addClass("bg-primary/10");
+  } else {
+    toggleBackground.removeClass("bg-primary/10").addClass("bg-neutral-200");
+  }
+});
+
+// Set initial background based on the initial state of all checkboxes
+$(".toggle-checkbox").each(function () {
+  var toggleBackground = $(this).siblings(".toggle-btn");
+  if ($(this).is(":checked")) {
+    toggleBackground.removeClass("bg-neutral-200").addClass("bg-primary/10");
+  } else {
+    toggleBackground.removeClass("bg-primary/10").addClass("bg-neutral-200");
+  }
+});
+
 
