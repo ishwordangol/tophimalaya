@@ -202,6 +202,37 @@ animateCounters();
 
 // end of counter
 
+
+// category slider
+
+$(".category").slick({
+  arrows: false,
+  autoplay: false,
+  dots: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: '60px',
+  mobileFirst: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+
+    {
+      breakpoint: 1024,
+      settings: "unslick"
+    }
+  ]
+});
+
+// end of category slider
+
+
 // testimonial slider
 
 $(".testimonialslider").slick({
