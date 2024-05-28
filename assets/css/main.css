@@ -592,6 +592,7 @@ input[type="number"]::-webkit-outer-spin-button {
   transform: translateX(-20px); /* Initial state */
 }
 
+.fadedownanimate,
 .footeranimation-fadedown {
   opacity: 0; /* Initial state */
   transform: translateY(-20px); /* Initial state */
